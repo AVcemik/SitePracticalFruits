@@ -1,0 +1,473 @@
+/* #region глобальные настройки */
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/* #endregion */
+
+/* #region Настройки меню */
+.container {
+    padding: 10px 0;
+
+    background-image: url(resources/main-background.png);
+    background-size: cover;
+}
+.menu-container {
+    padding: 10px 20px;
+
+    display: flex;
+}
+.menu-container-logo {
+    width: 50%
+}
+.menu-logo {
+    width: 5%;
+}
+.menu-container-menu {
+    width: 70%;
+
+    padding: 0 10px 0 600px;
+
+    color: #414447;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu-item {
+    padding: 10px;
+    
+}
+.menu-item:hover {
+    padding: 10px;
+
+    color: white;
+    background-color: #414447;
+
+    border-radius: 10px;
+    
+    transform: scale(1.1);
+}
+/* #endregion */
+
+/* #region Настройки контента */
+.service-container {
+    width: 100%;
+
+    display: flex;
+}
+.service-container-image {
+    width: 60%;
+    padding: 10px 0 10px 100px;
+}
+.services-image {
+    width: 100%;
+}
+.service-container-description {
+    width: 50%;
+    padding: 50px 100px;
+
+    color: #414447;
+    text-align: center;
+}
+.service-description-header {
+    padding: 0 0 20px 0;
+    font-size: 18px;
+}
+.service-description-paragraph {
+    font-size: 15px;
+}
+.service-description-button {
+    margin: 20px 0;
+    padding: 10px 20px;
+
+    font-size: 16px ;
+
+    color: white;
+    background-color: hsl(354, 91%, 64%);
+
+    border: 0px;
+    border-radius: 10px;
+
+    box-shadow: 3px 3px 5px hsla(354, 91%, 25%, 0.65);
+}
+.service-description-button:hover {
+    margin: 20px 0;
+    padding: 10px 20px;
+
+    font-size: 16px ;
+
+    color: hsl(354, 91%, 64%);
+    background-color: hsl(355, 63%, 89%);
+
+    border: 0px;
+    border-radius: 10px;
+
+    box-shadow: 3px 3px 5px hsla(354, 91%, 25%, 0.65);
+}
+/* #endregion */
+
+/* #region Настройки фруктов */
+.fruit-container {
+    padding: 50px 0;
+
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.fruit-container-subcontainer{
+    min-width: 280px;
+    max-width: 350px;
+    width: 22%;
+    min-height: 280px;
+    max-height: 350px;
+
+    margin: 10px;
+    padding: 10px;
+    border-radius: 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
+.fruit-container-subcontainer-style-ananas {
+    color: white;
+    background-color: hsl(4, 65%, 74%);
+    
+
+    box-shadow: 5px 5px 5px hsla(4, 65%, 25%, 0.65);
+}
+.fruit-container-subcontainer-style-ananas:hover {
+    color: white;
+    background-color: hsl(4, 65%, 44%);
+
+    box-shadow: 10px 10px 10px hsla(4, 65%, 25%, 0.65);
+
+    transform: scale(1.05);
+}
+.fruit-container-subcontainer-style-granade {
+    color: white;
+    background-color: hsl(66, 39%, 51%);
+
+    box-shadow: 5px 5px 5px hsla(66, 39%, 25%, 0.65);
+}
+.fruit-container-subcontainer-style-granade:hover {
+    color: white;
+    background-color: hsl(66, 45%, 35%);
+
+    box-shadow: 10px 10px 10px hsla(66, 39%, 10%, 0.65);
+
+    transform: scale(1.05);
+}
+.fruit-container-subcontainer-style-grapefruit {
+    color: white;
+    background-color: hsl(160, 20%, 71%);
+
+    box-shadow: 5px 5px 5px hsla(160, 20%, 25%, 0.65);
+}
+.fruit-container-subcontainer-style-grapefruit:hover {
+    color: white;
+    background-color: hsl(160, 25%, 40%);
+
+    box-shadow: 10px 10px 10px hsla(160, 20%, 15%, 0.65);
+
+    transform: scale(1.05);
+}
+.fruit-container-subcontainer-style-mango {
+    color: white;
+    background-color: hsl(43, 72%, 65%);
+    
+    box-shadow: 5px 5px 5px hsla(43, 72%, 25%, 0.65);
+}
+.fruit-container-subcontainer-style-mango:hover {
+    color: white;
+    background-color: hsl(43, 75%, 35%);
+    
+    box-shadow: 10px 10px 10px hsla(43, 72%, 15%, 0.65);
+
+    transform: scale(1.05);
+}
+
+.fruit-container-subcontainer-header-container{
+    width: 100%;
+    height: 350px;
+}
+.fruit-header {
+    margin: 0;
+    font-size: 24px;
+}
+.fruit-description {
+    margin: 10px 0;
+    font-size: 17px;
+}
+
+.fruit-image {
+    width: 60%;
+}
+/* #endregion */
+
+/* #region Настройки заголовка второй страницы */
+.header-container-2 {
+    width: 80%;
+
+    margin: 170px auto 170px auto;
+    padding: 5px 10px;
+
+    background-color: hsl(0, 0%, 100%, 0.6);
+
+    text-align: center;
+
+    border-radius: 10px;
+}
+.header-container-2:hover {
+    width: 80%;
+
+    margin: 170px auto 160px auto;
+    padding: 5px 10px;
+
+    background-color: hsl(0, 0%, 100%, 0.6);
+
+    text-align: center;
+
+    border-radius: 10px;
+
+    box-shadow: 3px 3px 10px rgb(0, 0, 0, 0.65);
+
+    transform: scale(1.1);
+}
+.header-head {
+    color: #7287dd;
+}
+.header-paragraph {
+    color: #fbbb97;
+}
+/* #endregion */
+
+/* #region Настройки контента второй страницы */
+.service-2-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.service-2-container-image-1 {
+    width: 20%;
+}
+
+.service-2-image-1 {
+    width: 100%;
+}
+
+.service-2-container-fruits-2 {
+    width: 40%;
+
+    display: flex;
+    flex-direction: column;    
+}
+
+.card-fruit-back{
+    width: 100%;
+    margin: 12px;
+
+    background-color: hsl(23, 49%, 91%);
+    
+    border-radius: 10px;
+
+    box-shadow: 5px 5px 5px hsla(23, 49%, 25%, 0.65);
+}
+.card-fruit-back:hover {
+    width: 100%;
+    margin: 10px;
+
+    background-color: hsl(23, 60%, 71%);
+    
+    border-radius: 10px;
+
+    box-shadow: 5px 5px 5px hsla(23, 49%, 25%, 0.65);
+
+    transform: scale(1.1);
+}
+
+.card-fruit {
+    height: 123px;
+
+    margin: 10px;;
+
+    border: 2px dotted #a9d26e;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.card-fruit:hover {
+    height: 123px;
+
+    margin: 10px;;
+
+    border: 2px dotted #f3f8ec;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.card-info {
+    width: 70%;
+
+    text-align: center;
+}
+
+.card-image {
+    height: 100%;
+}
+
+.service-2-container-image-2 {
+    width: 20%;
+
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+}
+
+.service-2-image-2 {
+    width: 75%;
+
+    position: absolute;
+    right: 0;
+}
+
+.service-2-image-3 {
+    width: 100%;
+
+    position: absolute;
+    right: 0;
+    bottom: 50px;
+}
+/* #endregion */
+
+/* #region Настройка стикеров покупки */
+.stiker-container {
+    margin: 100px auto 20px auto;
+}
+
+.stiker-container-row {
+    width: 80%;
+    margin: 10px auto;
+
+    display: flex;
+}
+
+.stiker-container-fruit {
+    width: 80%;
+
+    margin: 10px 20px;
+    padding: 20px;
+
+    color: #414447;
+    background-color: hsl(0, 0%, 100%);
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    border: 1px solid hsl(86, 55%, 56%);
+    border-radius: 10px;
+
+    box-shadow: 5px 5px 5px hsla(86, 25%, 25%, 0.65);
+}
+.stiker-container-fruit:hover {
+    width: 80%;
+
+    margin: 10px 20px;
+    padding: 20px;
+
+    color: #414447;
+    background-color: hsl(86, 100%, 90%);
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    border: 2px solid hsl(86, 75%, 26%);
+    border-radius: 10px;
+
+    box-shadow: 10px 10px 10px hsla(88, 25%, 10%, 0.65);
+
+    transform: scale(1.1);
+}
+
+.stiker-container-header {
+    margin: 0;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.stiker-header-image {
+    height: 48px;
+
+    margin: 0;
+}
+
+.stiker-header-description {
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+.stiker-container-context {
+    width: 100%;
+}
+
+.stiker-context-header {
+    margin: 5px 0 0 0;
+
+    font-size: 16px;
+}
+
+.stiker-context-context {
+    margin: 0;
+
+    font-size: 14px;
+}
+
+.stiker-buy {
+    width: 60%;
+
+    padding: 10px;
+
+    color: white;
+    background-color: #97cc51;
+
+    border: 0;
+    border-radius: 10px;
+}
+/* #endregion */
+
+/* #region Авторские права (находятся всегда снизу в видимой части экрана на белом фоне) */
+.by{
+    padding: 3px 10px;
+
+    background-color: white;
+
+    border-radius: 10px;
+
+    position: fixed;
+    bottom: 10px;
+    right: 30px;
+    
+    box-shadow: 2px 2px 5px hsl(0, 0%, 25%, 0.65);
+}
+
+.by p {
+    margin: 0;
+    padding: 0;
+
+    opacity: 100%;
+}
+/* #endregion */
+
